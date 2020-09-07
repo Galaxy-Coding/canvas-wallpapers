@@ -7,14 +7,6 @@
 	user-select: none; /* Standard syntax */ 
 }
 
-body {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	min-height: 100vh;
-	background-color: #282828;
-	html, body {margin: 0; height: 100%; overflow: hidden}
-}
 canvas {
   position: absolute;
   top: 0;
