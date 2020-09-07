@@ -23,7 +23,7 @@ class Dots {
 		const ctx = this.ctx,
 			spacing = this.spacing;
 			
-		ctx.fillStyle = 'rgba(255, 0, 0, 1)';
+		ctx.fillStyle = 'rgba(24, 129, 141, .1)';
 		this.dots = Array.apply(null, Array(this.cols)).map((n, x) => {
 			return Array.apply(null, Array(this.rows)).map((p, y) => {
 				let dot = {
