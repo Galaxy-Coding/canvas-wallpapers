@@ -1,5 +1,3 @@
-
-
 window.addEventListener('load', checkJSLoaded)
 
 function checkJSLoaded() {
