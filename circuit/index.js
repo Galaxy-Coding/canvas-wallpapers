@@ -23,7 +23,7 @@ class Dots {
 		const ctx = this.ctx,
 			spacing = this.spacing;
 			
-		ctx.fillStyle = 'rgba(24, 129, 141, .1)';
+		ctx.fillStyle = 'rgba(0, 0, 0, 0);';
 		this.dots = Array.apply(null, Array(this.cols)).map((n, x) => {
 			return Array.apply(null, Array(this.rows)).map((p, y) => {
 				let dot = {
@@ -43,7 +43,7 @@ class Dots {
 		ghostDots.height = this.canvas.height;
 
 		const dotsCtx = ghostDots.getContext('2d');
-		dotsCtx.fillStyle = 'rgb(24, 129, 141)';		
+		dotsCtx.fillStyle = 'rgba(255, 0, 0, 1)';		
 		this.dots.forEach(col => {
 			col.forEach(dot => {
 				dotsCtx.fillRect(dot.x, dot.y, 1, 1);
@@ -80,7 +80,7 @@ class Circuits {
 		canvas.width = this.width;
 		canvas.height = this.height;
 
-		ctx.strokeStyle = 'rgba(59, 177, 188, 1)';
+		ctx.strokeStyle = 'rgba(255, 0, 0, 1)';
 		ctx.lineWidth = Math.round(size/10);
 		this.collection.forEach(circuit => {
 			let point = [circuit.start[0], circuit.start[1]],
@@ -101,7 +101,7 @@ class Circuits {
 		});
 
 		ctx.lineWidth = ~~(this.size/5);
-		ctx.strokeStyle = 'rgba(59, 177, 188, .6)';
+		ctx.strokeStyle = 'rgba(255, 0, 0, 1)';
 		this.collection.forEach(circuit => {
 			ctx.beginPath();
 			ctx.arc(circuit.start[0] * size + size / 2, circuit.start[1] * size + size / 2, size / 4, 0, 2 * Math.PI, false);
